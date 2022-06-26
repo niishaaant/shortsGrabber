@@ -1,0 +1,43 @@
+.nav-container {
+	width: 100vw;
+	height: 10vh;
+	top: 0;
+	left: 0;
+	position: sticky;
+	z-index: 999;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--sec);
+	border-bottom: 4px solid var(--accent2);
+	color: #fff;
+	font-size: 2rem;
+	.logo {
+		font-size: 3rem;
+		font-weight: 600;
+		margin-left: 7rem;
+		transition: 0.2s;
+		cursor: pointer;
+		span {
+			transition: 0.2s;
+		}
+	}
+	.logo:hover {
+		span {
+			color: var(--accent2l);
+		}
+	}
+	.links {
+		margin-right: 7rem;
+		transition: 0.2s;
+		cursor: pointer;
+		i {
+			transition: 0.2s;
+		}
+	}
+	.links:hover {
+		i {
+			color: var(--accent2l);
+		}
+	}
+}

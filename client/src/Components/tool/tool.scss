@@ -1,0 +1,92 @@
+.tool-container {
+	display: flex;
+	justify-content: space-around;
+	font-size: 2rem;
+	padding: 3rem 7rem;
+	.preview {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.negetive-preview {
+			width: 853px;
+			height: 480px;
+			background-color: var(--sec);
+			color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.title {
+			font-weight: 600;
+			margin: 20px;
+		}
+	}
+	.table {
+		width: 30vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		div {
+			width: 100%;
+			table {
+				width: 100%;
+				text-align: center;
+				height: inherit;
+				th {
+					background-color: var(--accent1);
+					color: #fff;
+					padding: 2rem;
+				}
+				td {
+					height: 5rem;
+					.HD {
+						color: red;
+						top: 0;
+						font-size: 1rem;
+					}
+					a {
+						text-decoration: none;
+						padding: 1rem 2rem;
+						font-size: 1.2rem;
+						border-radius: 50px;
+						border: 3px solid var(--accent2);
+						background-color: var(--accent2);
+						color: #fff;
+						transition: 0.2s;
+						cursor: pointer;
+					}
+					a:hover {
+						background-color: var(--primary);
+						color: var(--accent2);
+					}
+				}
+			}
+		}
+		.choose-format-container {
+			width: 100%;
+			display: grid;
+			grid-template-columns: 33.33% 33.33% 33.33%;
+			grid-gap: 1px;
+			margin-bottom: 2rem;
+			.active {
+				background-color: var(--accent2);
+			}
+			.active:hover {
+				background-color: var(--accent2l);
+			}
+			button {
+				font-size: inherit;
+				color: #fff;
+				border: none;
+				background-color: var(--accent1);
+				padding: 2rem;
+				font-weight: 600;
+				cursor: pointer;
+				transition: 0.2s;
+			}
+			button:hover {
+				background-color: var(--accent1l);
+			}
+		}
+	}
+}

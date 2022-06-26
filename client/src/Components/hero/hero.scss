@@ -1,0 +1,141 @@
+.hero-container {
+	width: 100vw;
+	display: flex;
+	.gutter {
+		margin-bottom: 3rem;
+	}
+	.text-call {
+		width: 100vw;
+		padding-top: 6rem;
+		display: flex;
+		flex-direction: column;
+		margin: 0 4rem;
+		.form-container {
+			.form {
+				display: flex;
+				justify-content: space-between;
+				.red-border {
+					border: 3px solid rgb(143, 12, 12);
+				}
+				input {
+					width: 70%;
+					height: 7.5vh;
+					border: 3px solid #aaa;
+					border-radius: 50px;
+					background-color: var(--primary);
+					font-size: 2.5rem;
+					padding: 0 2rem;
+				}
+				textarea:focus,
+				input:focus {
+					outline: none;
+				}
+				button {
+					width: 25%;
+					height: 7.7vh;
+					border: 5px solid var(--accent2);
+					border-radius: 50px;
+					background-color: var(--accent2);
+					color: #fff;
+					font-size: 2.5rem;
+					cursor: pointer;
+					transition: 0.2s;
+				}
+				button:hover {
+					background-color: var(--primary);
+					color: var(--accent2);
+				}
+			}
+		}
+		.review {
+			i {
+				color: rgb(207, 159, 0);
+			}
+		}
+	}
+}
+
+.loading-container {
+	height: 10rem;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.dot {
+		width: 54px;
+		height: 54px;
+		border-radius: 50%;
+		background-color: #3ac;
+		display: inline-block;
+		animation: slide 1s infinite;
+	}
+	.dot:nth-child(1) {
+		animation-delay: 0.1s;
+		background: #32aacc;
+	}
+	.dot:nth-child(2) {
+		animation-delay: 0.2s;
+		background: #64aacc;
+	}
+	.dot:nth-child(3) {
+		animation-delay: 0.3s;
+		background: #96aacc;
+	}
+	.dot:nth-child(4) {
+		animation-delay: 0.4s;
+		background: #c8aacc;
+	}
+	.dot:nth-child(5) {
+		animation-delay: 0.5s;
+		background: #faaacc;
+	}
+}
+
+@-moz-keyframes slide {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		opacity: 0.3;
+		transform: scale(2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+@-webkit-keyframes slide {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		opacity: 0.3;
+		transform: scale(2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+@-o-keyframes slide {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		opacity: 0.3;
+		transform: scale(2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+@keyframes slide {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		opacity: 0.3;
+		transform: scale(2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
