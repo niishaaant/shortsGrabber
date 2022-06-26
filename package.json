@@ -1,0 +1,28 @@
+{
+	"name": "shortsgrabber",
+	"version": "1.0.0",
+	"description": "web tool for downloading YT vid.",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index",
+		"dev": "concurrently \"nodemon index.js\" \" cd client && npm start\"",
+		"back-end": "nodemon index.js",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+	},
+	"author": "Nishant",
+	"license": "ISC",
+	"dependencies": {
+		"child_process": "^1.0.2",
+		"cors": "^2.8.5",
+		"express": "^4.18.1",
+		"ffmpeg": "^0.0.4",
+		"ffmpeg-static": "^5.0.0",
+		"fluent-ffmpeg": "^2.1.2",
+		"ytdl-core": "^4.11.0"
+	},
+	"devDependencies": {
+		"concurrently": "^7.2.1",
+		"nodemon": "^2.0.16"
+	}
+}
