@@ -8,7 +8,7 @@ const Tool = ({ Link, details, allFormats }) => {
 	const [format, setFormat] = useState(3);
 	const [formats, setFormats] = useState(allFormats.formats);
 	useEffect(() => {
-		if (format == 3 || format == 1) {
+		if (format == 3) {
 			setFormats(
 				allFormats.adaptiveFormats.filter((d) => {
 					return d.mimeType[0] == 'v';
@@ -20,6 +20,8 @@ const Tool = ({ Link, details, allFormats }) => {
 					return d.audioChannels;
 				})
 			);
+		} else if (format == 1) {
+			setFormats(allFormats.formats);
 		}
 		// console.log(formats);
 	}, [format]);
